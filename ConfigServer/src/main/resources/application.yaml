@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: ssh://git@github.com/PawelMiskowiec/microservices-course-config-server.git
+          ignore-local-ssh-settings: false
+server:
+  port: 8888
+
